@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>EA Logistics</title>
+<link rel="stylesheet" href="style.css">
+<script src="app.js"></script>
+</head>
+<body>
+
+<nav>
+<h2>EA Logistics</h2>
+<div>
+<a href="#features">Features</a>
+<a href="#" onclick="toggleTheme()">Toggle</a>
+<a href="#" onclick="document.getElementById('auth').style.display='block'">Sign In</a>
+</div>
+</nav>
+
+<div class="hero">
+<h1>EA Logistics</h1>
+<p>Advanced supply chain dashboard with smart tracking, analytics & secure payments.</p>
+<button class="btn primary" onclick="document.getElementById('auth').style.display='block'">Get Started</button>
+</div>
+
+<div class="section" id="features">
+<h2 style="text-align:center;margin-bottom:60px;">Core Features</h2>
+<div class="cards">
+<div class="card"><h3>Order Management</h3><p>Manage shipments in real time.</p></div>
+<div class="card"><h3>Smart Tracking</h3><p>Live tracking & analytics system.</p></div>
+<div class="card"><h3>Secure Payments</h3><p>Integrated payment dashboard.</p></div>
+<div class="card"><h3>Analytics</h3><p>Data-driven logistics insights.</p></div>
+</div>
+</div>
+
+<!-- AUTH MODAL -->
+<div id="auth" style="display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.7);justify-content:center;align-items:center;">
+<div class="card" style="width:350px;">
+<h2>Login / Register</h2>
+<input id="email" placeholder="Email" style="width:100%;padding:10px;margin:10px 0;">
+<input id="password" type="password" placeholder="Password" style="width:100%;padding:10px;margin:10px 0;">
+<button class="btn primary" onclick="login()">Login</button>
+<button class="btn secondary" onclick="register()">Register</button>
+</div>
+</div>
+
+</body>
+</html>
